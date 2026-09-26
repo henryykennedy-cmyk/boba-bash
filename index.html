@@ -1,13 +1,98 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <img
-      src="https://png.pngtree.com/png-vector/20250817/ourmid/pngtree-an-earth-on-the-transparent-background-png-image_17012037.webp"
-      />
-    <h1>Ocean Reefs</h1>
-    <p>Ocean Reefs are very diverse and fun!</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Reefs: The Rainforests of the Sea</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #f0fdf4, #e0f2fe);
+            color: #1e293b;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-4 sm:p-8">
+
+    <header class="w-full max-w-4xl bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 sm:p-10 mb-8 flex flex-col md:flex-row items-center gap-6 border border-emerald-100">
+        <div class="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 bg-emerald-50 rounded-full p-2 shadow-inner flex items-center justify-center overflow-hidden">
+            <img 
+                src="https://png.pngtree.com/png-vector/20250817/ourmid/pngtree-an-earth-on-the-transparent-background-png-image_17012037.webp" 
+                alt="Earth representation" 
+                class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                onerror="this.src='https://placehold.co/150x150/10b981/ffffff?text=Earth'"
+            />
+        </div>
+        <div class="text-center md:text-left">
+            <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Marine Ecosystems</span>
+            <h1 class="text-3xl sm:text-5xl font-bold text-slate-800 mt-2 mb-3">Ocean Reefs</h1>
+            <p class="text-lg text-slate-600 font-medium">Ocean Reefs are very diverse and fun! Explore the vibrant underwater cities that sustain our planet.</p>
+        </div>
+    </header>
+
+    <main class="w-full max-w-4xl bg-white rounded-2xl shadow-xl p-6 sm:p-12 mb-8 space-y-8 border border-slate-100">
+        <section>
+            <h2 class="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-emerald-500 pl-3">The Vital Importance of Coral Reefs</h2>
+            <p class="text-slate-600 leading-relaxed mb-4">
+                Coral reefs are among the most diverse, beautiful, and productive ecosystems on the planet. Often referred to as the <strong class="text-emerald-700">"rainforests of the sea,"</strong> they cover less than 1 percent of the ocean floor yet support an estimated 25 percent of all marine life. Beyond their breathtaking visual appeal, coral reefs play a critical role in maintaining the health of global oceans and protecting coastal communities.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-50 p-6 rounded-xl border border-slate-200">
+            <div>
+                <h3 class="text-xl font-semibold text-slate-800 mb-2">Structure and Biodiversity</h3>
+                <p class="text-slate-600 leading-relaxed mb-3">
+                    At first glance, coral reefs may look like colorful rocks or underwater plants, but they are actually built by millions of tiny, soft-bodied animals called <strong class="text-emerald-700">polyps</strong>. These polyps secrete a hard exoskeleton of calcium carbonate, which accumulates over hundreds of years to form massive reef structures.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-slate-800 mb-2">Key Life Supported:</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-600">
+                    <li><strong class="text-slate-700">Fishes:</strong> Over 4,000 species rely on reefs for shelter.</li>
+                    <li><strong class="text-slate-700">Invertebrates:</strong> Crabs, shrimp, and sea urchins thrive here.</li>
+                    <li><strong class="text-slate-700">Marine Reptiles & Mammals:</strong> Sea turtles and dolphins visit frequently.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold text-slate-800 mb-4 border-l-4 border-sky-500 pl-3">Ecological and Human Benefits</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-sky-50/50 p-4 rounded-xl border border-sky-100">
+                    <h4 class="font-bold text-sky-900 mb-1">🌊 Coastal Protection</h4>
+                    <p class="text-sm text-slate-600">Reefs act as natural breakwaters, absorbing wave energy and preventing storm damage and erosion.</p>
+                </div>
+                <div class="bg-sky-50/50 p-4 rounded-xl border border-sky-100">
+                    <h4 class="font-bold text-sky-900 mb-1">💰 Economic Value</h4>
+                    <p class="text-sm text-slate-600">Tourism industries rely heavily on healthy reefs for scuba diving, snorkeling, and sustainable recreation.</p>
+                </div>
+                <div class="bg-sky-50/50 p-4 rounded-xl border border-sky-100">
+                    <h4 class="font-bold text-sky-900 mb-1">🐟 Food Security</h4>
+                    <p class="text-sm text-slate-600">Millions of people in coastal developing nations depend directly on reef-associated fisheries.</p>
+                </div>
+                <div class="bg-sky-50/50 p-4 rounded-xl border border-sky-100">
+                    <h4 class="font-bold text-sky-900 mb-1">💊 Medical Discoveries</h4>
+                    <p class="text-sm text-slate-600">Reef organisms provide compounds used to develop treatments for cancer, arthritis, and infections.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t pt-6">
+            <h2 class="text-2xl font-bold text-slate-800 mb-3 text-rose-700">Threats and Conservation</h2>
+            <p class="text-slate-600 leading-relaxed mb-4">
+                Despite their immense value, coral reefs face severe global threats. <strong class="text-rose-600">Climate change</strong> is the leading danger, as rising ocean temperatures cause coral bleaching—a phenomenon where stressed corals expel helpful algae. Additionally, ocean acidification, coastal development, overfishing, and plastic pollution threaten reef survival.
+            </p>
+            <p class="text-slate-600 leading-relaxed">
+                Protecting these vital ecosystems requires global action to reduce carbon emissions, alongside local conservation efforts like establishing marine protected areas and practicing sustainable fishing.
+            </p>
+        </section>
+    </main>
+
+    <footer class="w-full max-w-4xl text-center text-slate-500 text-sm py-4">
+        <p>&copy; 2026 Ocean Reefs Conservation Initiative. Preserving marine life for future generations.</p>
+    </footer>
+
+</body>
 </html>
